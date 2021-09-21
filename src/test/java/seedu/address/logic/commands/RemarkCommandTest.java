@@ -1,13 +1,18 @@
 package seedu.address.logic.commands;
 
-import org.junit.jupiter.api.*;
-import seedu.address.model.*;
-import seedu.address.model.person.*;
-import seedu.address.testutil.*;
+import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
+import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_PERSON;
+import static seedu.address.testutil.TypicalPersons.getTypicalAddressBook;
 
-import static seedu.address.logic.commands.CommandTestUtil.*;
-import static seedu.address.testutil.TypicalIndexes.*;
-import static seedu.address.testutil.TypicalPersons.*;
+import org.junit.jupiter.api.Test;
+
+import seedu.address.model.AddressBook;
+import seedu.address.model.Model;
+import seedu.address.model.ModelManager;
+import seedu.address.model.UserPrefs;
+import seedu.address.model.person.Person;
+import seedu.address.model.person.Remark;
+import seedu.address.testutil.PersonBuilder;
 
 class RemarkCommandTest {
 
